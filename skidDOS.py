@@ -10,7 +10,7 @@ try:
     threads = int(sys.argv[2])
     timer = float(sys.argv[3])
 except IndexError:
-    print('\n[:P] Command usage: python ' + sys.argv[0] + ' <target> <threads> <time>.')
+    print('\n:P Command usage: python ' + sys.argv[0] + ' <target> <threads> <time>.')
     sys.exit()
     
 timeout = time.time() + 1 * timer
@@ -26,8 +26,8 @@ def skidtime():
         sys.exit()
     except:
         pass
-print('\n[:P] Starting...')
+print('\n>:) Starting...')
 for x in range(0, threads):
     threading.Thread(target=skidtime).start()
     
-print('\n[:P] Finished!')
+print('\n:D Finished!')
